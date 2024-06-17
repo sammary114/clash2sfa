@@ -53,7 +53,7 @@
                 "server": "local"
             },
             {
-                "rule_set": ["geoip-cn", "geosite-apple@cn.srs"],
+                "rule_set": ["geoip-cn", "geosite-apple@cn.srs", "geosite-googlefcm"],
                 "server": "local"
             }
         ],
@@ -114,7 +114,7 @@
                 "outbound": "direct"
             },
             {
-                "rule_set": ["geoip-cn", "geosite-apple@cn.srs"],
+                "rule_set": ["geoip-cn", "geosite-apple@cn.srs", "geosite-googlefcm"],
                 "outbound": "direct"
             }
         ],
@@ -143,6 +143,12 @@
                 "type": "remote",
                 "format": "binary",
                 "url": "https://github.com/SagerNet/sing-geosite/raw/rule-set/geosite-apple@cn.srs"
+            },
+            {
+                "tag": "geosite-googlefcm",
+                "type": "remote",
+                "format": "binary",
+                "url": "https://github.com/SagerNet/sing-geosite/raw/rule-set/geosite-googlefcm.srs"
             },
             {
                 "tag": "chrome-doh",
