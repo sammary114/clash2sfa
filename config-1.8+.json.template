@@ -53,7 +53,7 @@
                 "server": "local"
             },
             {
-                "rule_set": "geosite-cn",
+                "rule_set": ["geoip-cn", "geosite-apple@cn.srs"],
                 "server": "local"
             }
         ],
@@ -114,7 +114,7 @@
                 "outbound": "direct"
             },
             {
-                "rule_set": "geoip-cn",
+                "rule_set": ["geoip-cn", "geosite-apple@cn.srs"],
                 "outbound": "direct"
             }
         ],
@@ -137,6 +137,12 @@
                 "type": "remote",
                 "format": "binary",
                 "url": "https://raw.githubusercontent.com/xmdhs/sing-box-ruleset/rule-set/AdGuardSDNSFilter.srs"
+            },
+            {
+                "tag": "geosite-apple@cn",
+                "type": "remote",
+                "format": "binary",
+                "url": "https://github.com/SagerNet/sing-geosite/raw/rule-set/geosite-apple@cn.srs"
             },
             {
                 "tag": "chrome-doh",
